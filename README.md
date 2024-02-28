@@ -34,7 +34,7 @@ Launch RVIZ2 using `ros2 run rviz2 rviz2` and subcribe to the `/cuUKF/filered_od
 </div>
 
 ## ⚠️ Note
-1) The fusion does not consider the IMU's orientation only the visual odometry, as raw IMU dont produce orientation without addiontal filters such as complementary filter and the Madgwick filter.
+1) The fusion does not consider the IMU's orientation only the visual odometry'orientation for the system dynamics and measurements, as raw IMU don't produce orientation without additional filters such as complementary filter and the Madgwick filter.
 2) Feel free to change the alpha, beta and kappa values along with the convariace to improve state estimates.
 3) The dynamics of the system use simple equations, for the best fusion you may need to change the dynamics.
 4) Consider adding augmented simga points to further increase the robustness.  
