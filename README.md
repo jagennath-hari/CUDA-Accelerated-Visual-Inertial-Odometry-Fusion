@@ -15,7 +15,7 @@ Harness GPU acceleration for advanced visual odometry and IMU data fusion with o
 Launch the node using `ros2 launch cuUKF gpu_filter.launch.py odom_topic:=/odom imu_topic:=/imu`.
 The `/odom` should be replaced with your `nav_msgs/Odometry` and the `/imu` should be replaced with your `sensor_msgs/Imu`.
 
-## 💬 ROS2 Message
+## 💬 ROS 2 Message
 The filter odometry gets published as `nav_msgs/Odometry` in the `/cuUKF/filtered_odom` topic.
 
 ## 🖼️ RVIZ2 GUI
