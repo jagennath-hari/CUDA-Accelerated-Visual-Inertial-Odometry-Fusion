@@ -30,7 +30,7 @@ Launch RVIZ2 using `ros2 run rviz2 rviz2` and subcribe to the `/cuUKF/filered_od
 
 <div align="center">
     <img src="assets/Covarince.png" alt="Covarince" width="800"/>
-    <p>Odometry</p>
+    <p>Covarince</p>
 </div>
 
 ## ⚠️ Note
