@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Hari"
+  given-names: "Jagennath"
+title: "CUDA-Accelerated-Visual-Inertial-Odometry-Fusion"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2024-02-28
+url: "https://github.com/jagennath-hari/CUDA-Accelerated-Visual-Inertial-Odometry-Fusion"
