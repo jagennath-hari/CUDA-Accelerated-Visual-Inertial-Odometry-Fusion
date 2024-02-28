@@ -38,3 +38,4 @@ Launch RVIZ2 using `ros2 run rviz2 rviz2` and subcribe to the `/cuUKF/filered_od
 2) Feel free to change the alpha, beta and kappa values along with the convariace to improve state estimates.
 3) The dynamics of the system use simple equations, for the best fusion you may need to change the dynamics.
 4) Consider adding augmented simga points to further increase the robustness.  
+5) There is also a CPU version of the UKF for quick development and testing.
