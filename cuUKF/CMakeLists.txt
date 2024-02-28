@@ -23,14 +23,9 @@ set(ROS_DEPENDS
     rclcpp
     std_msgs
     ament_cmake
-    cv_bridge
     sensor_msgs
     nav_msgs
     message_filters
-    OpenCV
-    tf2
-    tf2_ros
-    tf2_geometry_msgs
     CUDAToolkit
   )
 
@@ -55,11 +50,9 @@ add_library(cpu_filter
 add_executable(cpu_node nodes/cpuNode.cpp)
 ament_target_dependencies(cpu_node
   rclcpp
-  cv_bridge
   sensor_msgs
   nav_msgs
   std_msgs
-  OpenCV
   Eigen3
   message_filters
   geometry_msgs
@@ -67,11 +60,9 @@ ament_target_dependencies(cpu_node
 
 ament_target_dependencies(cpu_filter
   rclcpp
-  cv_bridge
   sensor_msgs
   nav_msgs
   std_msgs
-  OpenCV
   Eigen3
   message_filters
   geometry_msgs
@@ -107,24 +98,18 @@ target_compile_options(gpu_filter PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-Xcompiler=
 add_executable(core_node nodes/coreNode.cpp)
 ament_target_dependencies(core_node
   rclcpp
-  cv_bridge
   sensor_msgs
   nav_msgs
   std_msgs
-  OpenCV
-  Eigen3
   message_filters
   geometry_msgs
 )
 
 ament_target_dependencies(gpu_filter
   rclcpp
-  cv_bridge
   sensor_msgs
   nav_msgs
   std_msgs
-  OpenCV
-  Eigen3
   message_filters
   geometry_msgs
 )
