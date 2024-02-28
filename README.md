@@ -1,5 +1,5 @@
 # CUDA-Accelerated-Visual-Inertial-Odometry-Fusion
-Harness the power of GPU acceleration for fusing visual odometry and IMU data with an advanced Unscented Kalman Filter (UKF) implementation. Developed in C++ and utilizing CUDA, cuBLAS, and cuSOLVER, this system offers unparalleled real-time performance in state and covariance estimation for robotics and autonomous system applications.
+Harness GPU acceleration for advanced visual odometry and IMU data fusion with our Unscented Kalman Filter (UKF) implementation. Developed with C++ and powered by CUDA, cuBLAS, and cuSOLVER, our system delivers unmatched real-time performance in state and covariance estimation for robotics applications. Integrated with ROS 2 for seamless sensor data management, it ensures high-efficiency and scalable solutions for complex robotic systems, making it ideal for a wide range of autonomous system applications.
 
 ## 🏁 Dependencies
 1) NVIDIA Driver ([Official Download Link](https://www.nvidia.com/download/index.aspx))
