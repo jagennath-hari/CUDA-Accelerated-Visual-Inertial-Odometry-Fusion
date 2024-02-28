@@ -10,3 +10,7 @@ Harness the power of GPU acceleration for fusing visual odometry and IMU data wi
 1) Clone `https://github.com/jagennath-hari/CUDA-Accelerated-Visual-Inertial-Odometry-Fusion.git`
 2) Move `cuUKF` into `ROS2_WORKSPACE`
 3) `cd ROS2_WORKSPACE` build workspace using `colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release --parallel-workers $(nproc)`
+
+## 🖼️ Running cuUKF
+Launch the node using `ros2 launch cuUKF gpu_filter.launch.py odom_topic:=/odom imu_topic:=/imu`
+`/odom` should be replaced with your `nav_msgs/Odometry` and `/imu` should be replaced with your `sensor_msgs/Imu`
