@@ -12,5 +12,8 @@ Harness the power of GPU acceleration for fusing visual odometry and IMU data wi
 3) `cd ROS2_WORKSPACE` build workspace using `colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release --parallel-workers $(nproc)`
 
 ## 🖼️ Running cuUKF
-Launch the node using `ros2 launch cuUKF gpu_filter.launch.py odom_topic:=/odom imu_topic:=/imu`
-`/odom` should be replaced with your `nav_msgs/Odometry` and `/imu` should be replaced with your `sensor_msgs/Imu`
+Launch the node using `ros2 launch cuUKF gpu_filter.launch.py odom_topic:=/odom imu_topic:=/imu`.
+The `/odom` should be replaced with your `nav_msgs/Odometry` and the `/imu` should be replaced with your `sensor_msgs/Imu`.
+
+## 🖼️ RVIZ2 GUI
+Launch RVIZ2 using `ros2 run rviz2 rviz2` and subcribe to the `/cuUKF/filered_odom` topic.
