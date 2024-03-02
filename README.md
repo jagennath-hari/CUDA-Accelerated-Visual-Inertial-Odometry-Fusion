@@ -9,7 +9,7 @@ Harness GPU acceleration for advanced visual odometry and IMU data fusion with o
 ## ⚙️ Install
 1) Clone `https://github.com/jagennath-hari/CUDA-Accelerated-Visual-Inertial-Odometry-Fusion.git`
 2) Move `cuUKF` into `ROS2_WORKSPACE`
-3) Modify the 'CMakeLists.txt' file at `set(CMAKE_CUDA_ARCHITECTURES 89)` and change to your GPU architecture. If you don't know which one you can refer to [NVIDIA GPU Compute Capability](https://developer.nvidia.com/cuda-gpus#compute).
+3) Modify the `CMakeLists.txt` file at `set(CMAKE_CUDA_ARCHITECTURES 89)` and change to your GPU architecture. If you don't know which one you can refer to [NVIDIA GPU Compute Capability](https://developer.nvidia.com/cuda-gpus#compute).
 4) `cd ROS2_WORKSPACE` build workspace using `colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release --parallel-workers $(nproc)`
 
 ## 📈 Running cuUKF
