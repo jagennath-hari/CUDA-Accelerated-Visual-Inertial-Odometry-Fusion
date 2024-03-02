@@ -26,16 +26,16 @@ Launch RVIZ2 using `ros2 run rviz2 rviz2` and subcribe to the `/cuUKF/filered_od
     <p>Odometry</p>
 </div>
 
-### Visualize the covaraince of the state
+### Visualize the covariance of the state
 
 <div align="center">
-    <img src="assets/Covarince.png" alt="Covarince" width="800"/>
-    <p>Covarince</p>
+    <img src="assets/Covarince.png" alt="Covariance" width="800"/>
+    <p>Covariance</p>
 </div>
 
 ## ⚠️ Note
-1) The fusion does not consider the IMU's orientation only the visual odometry'orientation for the system dynamics and measurements, as raw IMU don't produce orientation without additional filters such as complementary filter and the Madgwick filter.
-2) Feel free to change the alpha, beta and kappa values along with the convariace to improve state estimates.
+1) The fusion does not consider the IMU's orientation only the visual odometry's orientation for the system dynamics and measurements, as raw IMU don't produce orientation without additional filters such as complementary filter and the Madgwick filter.
+2) Feel free to change the alpha, beta and kappa values along with the covariance to improve state estimation.
 3) The dynamics of the system use simple equations, for the best fusion you may need to change the dynamics.
-4) Consider adding augmented simga points to further increase the robustness.  
+4) Consider adding augmented sigma points to further increase the robustness.  
 5) There is also a CPU version of the UKF for quick development and testing.
